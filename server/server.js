@@ -40,24 +40,24 @@ app.post("/send", (req, res) => {
 	else {
 		toValid = validator.isEmail(to);
 	}
-	const isValid = validator.isEmail(req.body.from) && toValid && !validator.isEmpty(req.body.subject) && !validator.isEmpty(req.body.message) && !validator.isEmpty(req.body.password);
+	const isValid = validator.isEmail(req.body.from) && toValid && !validator.isEmpty(req.body.subject) && !validator.isEmpty(req.body.message.trim()) && !validator.isEmpty(req.body.password.trim());
 	if (isValid) {
 		const transporter = nodemailer.createTransport({
 			service: 'gmail',
 			auth: {
 				user: req.body.from,
-				pass: req.body.password
+				pass: req.body.password.trim()
 			}
 		});
 
 		const mailOptions = {
 			from: req.body.from,
-			to,
-			subject: req.body.subject,
-			html: req.body.message
+			to: to.trim(),
+			subject: req.body.subject.trim(),
+			html: req.body.message.trim()
 		};
 
-		transporter.sendMail(mailOptions, function (error, info) {
+		transporter.sendMail(mailOptions, (error, info) => {
 			if (error) {
 				if (error.toString().includes("getaddrinfo ENOTFOUND")) {
 					res.render("index", { err: `Can't connect to network !! Turn On Internet !!` });
