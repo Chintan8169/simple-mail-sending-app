@@ -1,0 +1,76 @@
+body
+{
+	min-height: 90vh;
+}
+
+.four0four
+{
+	margin: 300px 0 15px 0;
+	align-self:center;
+	font-size: 3.5rem;
+	background: linear-gradient(to right,#bf1002, #f23a23, #2196f3);
+	pointer-events: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#gear
+{
+	position: absolute;
+	top: 110px;
+	left: calc(50% - 75px);
+	height: 150px;
+	width: 150px;
+	animation: round 6s infinite linear;
+	filter: invert(1);
+}
+
+@keyframes round
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+.container
+{
+	height: 150px;
+	width: 95%;
+	padding: 30px 10px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.5);
+	border-top: 1.5px solid rgba(255, 255, 255, 0.4);
+	border-left: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.container h1
+{
+	font-size: 27px;
+}
+
+.container h2
+{
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.container h2 a
+{
+	text-decoration: none;
+	color: #f42245;
+}
+
+.container h2 a:hover
+{
+	text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Mail App</title>
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+	<!-- <img id="bg" src="image/bg.png"> -->
+	<div class="container">
+		<form action="/send" method="post" autocomplete="off">
+			<div class="form-control">
+				<label for="from">Enter Sender Email :</label>
+				<input type="email" name="from" id="from" required autofocus>
+			</div>
+			<div class="form-control">
+				<label for="password">Enter Sender Email Password :</label>
+				<input type="password" name="password" id="password" required>
+			</div>
+			<div class="form-control">
+				<label for="to">Enter Reciever Email :</label>
+				<input type="email" name="to" id="to" required>
+			</div>
+			<div class="form-control">
+				<label for="subject">Enter Subject :</label>
+				<input type="text" name="subject" id="subject" required>
+			</div>
+			<div class="form-control">
+				<label for="message">Enter Message :</label>
+				<textarea name="message" id="message" required></textarea>
+			</div>
+			<div class="error"></div>
+			<div class="success"></div>
+			<input type="submit" value="Send">
+		</form>
+	</div>
+</body>
+
+</html>

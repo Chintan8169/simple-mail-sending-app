@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Simple Mail App
+		link(rel="stylesheet", href="css/all.css")
+		link(rel="stylesheet", media="(min-width: 950px) and (max-width: 5000px)", href="css/style.css")
+		link(rel="stylesheet", media="(min-width: 0px) and (max-width: 950px)", href="css/mobile.css")
+		link(rel="shortcut icon", href="image/favicon.ico", type="image/x-icon")
+	body
+		.container
+			form(action="/send", method="post",autocomplete="off")
+				.form-control
+					label(for="from") Enter Sender Email :
+					input#from(type="email", name="from",required,autofocus, placeholder="Sender")
+				.form-control
+					label(for="password") Enter Sender Password :
+					input#password(type="password", name="password",required, placeholder="Password")
+				.form-control
+					label(for="to") Enter Enter Reciever Email :
+					input#to(type="text", name="to",required, placeholder="Multiple / Single  Reciever")
+				.form-control
+					label(for="subject") Enter Subject :
+					input#subject(type="text", name="subject",required, placeholder="Subject")
+				.form-control
+					label(for="message") Enter Message :
+					textarea#message(type="text", name="message",required, placeholder="Message")
+				.error 
+					| !{err}
+				.success 
+					| !{msg}
+				input(type="submit", value="Send")
+	script(src="js/index.js")
