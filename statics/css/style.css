@@ -1,13 +1,11 @@
-.container
-{
+.container {
 	height: 650px;
 	margin: auto 0;
 	padding: 10px 50px;
 	backdrop-filter: blur(15px);
 }
 
-form
-{
+form {
 	width: 100%;
 }
 
@@ -23,8 +21,8 @@ form
 	cursor: pointer;
 }
 
-.form-control input,.form-control textarea
-{
+.form-control input,
+.form-control textarea {
 	color: black;
 	background: rgba(255, 255, 255);
 	padding: 5px 18px;
@@ -33,24 +31,20 @@ form
 	border-radius: 15px;
 	border: 0;
 	margin: 5px 0;
-	transition: all 0.5s;
+	transition: box-shadow 0.3s;
 }
 
-
-.form-control input:focus,.form-control textarea:focus
-{
-	box-shadow: 0 0 5px #2196f3,
-	0 0 10px #2196f3;
+.form-control input:focus,
+.form-control textarea:focus {
+	box-shadow: 0 0 0 3px #2196f3;
 }
 
-.form-control textarea
-{
+.form-control textarea {
 	min-height: 100px;
 	max-height: 100px;
 	min-width: 100%;
 	max-width: 100%;
 }
-
 
 .container input[type="submit"] {
 	color: black;
@@ -62,32 +56,33 @@ form
 	border-radius: 50px;
 	outline: none;
 	border: 0;
-	background: #fff;
+	background: transparent;
+	color: #fff;
 	font-weight: bold;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(255, 255, 255, 0.3);
+	transition: box-shadow 0.25s;
 }
 
-.error
-{
+.container input[type="submit"]:hover {
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(255, 255, 255, 0.3), inset -2px -2px 4px rgba(255, 255, 255, 0.2),
+		inset 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.error {
 	color: red;
 	font-size: 20px;
 }
 
-
-.error a
-{
+.error a {
 	text-decoration: none;
 	color: #2196f3;
 }
 
-.error a:hover
-{
+.error a:hover {
 	text-decoration: underline;
 }
 
-
-.success
-{
+.success {
 	color: #00a81e;
 	font-size: 20px;
 }

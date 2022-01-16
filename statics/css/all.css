@@ -1,24 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*
-{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #fff;
 }
 
-body
-{
+body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	background-color: #031323;
 }
 
-.container
-{
+.container {
 	height: 300px;
 	width: 900px;
 	align-self: center;

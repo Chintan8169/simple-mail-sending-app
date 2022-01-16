@@ -1,98 +1,82 @@
 @media (min-width: 1350px) and (max-width: 5000px) {
-	.four0four
-	{
+	.four0four {
 		margin: 30px 0;
-		align-self:center;
+		align-self: center;
 		font-size: 10rem;
-		background: linear-gradient(to right,#bf1002, #f23a23, #2196f3);
+		background: linear-gradient(to right, #bf1002, #f23a23, #2196f3);
 		pointer-events: none;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
-	#gear
-	{
+	#gear {
 		width: 115px;
 		height: 115px;
 	}
 
-	h1
-	{
+	h1 {
 		font-size: 3rem;
 	}
 
-	h2
-	{
+	h2 {
 		font-size: 2.1rem;
 	}
 }
 
 @media (min-width: 715px) and (max-width: 1350px) {
-	.four0four
-	{
+	.four0four {
 		margin: 30px 0;
-		align-self:center;
+		align-self: center;
 		font-size: 5rem;
-		background: linear-gradient(to right,#bf1002, #f23a23, #2196f3);
+		background: linear-gradient(to right, #bf1002, #f23a23, #2196f3);
 		pointer-events: none;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
-	#gear
-	{
+	#gear {
 		width: 65px;
 		height: 65px;
 	}
 
-	h1
-	{
+	h1 {
 		font-size: 2.1rem;
 	}
 
-	h2
-	{
+	h2 {
 		font-size: 1.2rem;
 	}
 }
 
-.container
-{
+.container {
 	width: auto;
 	height: auto;
 	margin: 10px 20px;
 }
 
-.container h2
-{
+.container h2 {
 	margin-top: 10px;
 }
 
-.container h2 a
-{
+.container h2 a {
 	text-decoration: none;
 	color: #f42245;
 }
 
-.container h2 a:hover
-{
+.container h2 a:hover {
 	text-decoration: underline;
 }
 
-#gear
-{
+#gear {
 	filter: invert(1);
 	animation: round 6s infinite linear;
 }
 
-@keyframes round
-{
-	0%
-	{
+@keyframes round {
+	0% {
 		transform: rotate(0deg);
 	}
-	100%
-	{
+	100% {
 		transform: rotate(360deg);
 	}
 }
